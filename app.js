@@ -2,14 +2,10 @@ const app = Vue.createApp({
   data() {
     return {
       counter: 0,
-      name: "",
-      confirmedName: ""
+      name: ""
     };
   },
   methods: {
-    confirmInput() {
-      this.confirmedName = this.name
-    },
     add(num) {
       this.counter = this.counter + num
     },
@@ -21,6 +17,9 @@ const app = Vue.createApp({
     },
     submitForm() {
       alert("Submitted!")
+    },
+    resetInput() {
+      this.name = ""
     }
   },
 });
