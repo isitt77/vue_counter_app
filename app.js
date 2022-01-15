@@ -20,6 +20,9 @@ const app = Vue.createApp({
     },
     resetInput() {
       this.name = ""
+    },
+    outputFullName() {
+      return this.name + " Isitt"
     }
   },
 });
