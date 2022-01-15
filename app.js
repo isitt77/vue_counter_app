@@ -22,7 +22,9 @@ const app = Vue.createApp({
       this.name = ""
     },
     outputFullName() {
-      return this.name + " Isitt"
+      if (this.name !== "") {
+        return this.name + " Isitt"
+      }
     }
   },
 });
